@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kX0-Ic-gDR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--On Boarding Steps View Controller-->
+        <scene sceneID="bOz-z3-bRD">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingSteps" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T72-7c-6gP" customClass="OnBoardingStepsViewController" customModule="Finanzas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sr8-Je-1on">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DSb-NE-Fnk">
+                                <rect key="frame" x="87.5" y="93.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="669-Wu-Rum"/>
+                                    <constraint firstAttribute="height" constant="200" id="JJf-Ox-PCZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l49-7P-5IJ">
+                                <rect key="frame" x="20" y="313.5" width="335" height="49.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" name="GreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pih-kI-C9A">
+                                <rect key="frame" x="20" y="383" width="335" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" name="GrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pih-kI-C9A" firstAttribute="leading" secondItem="aNf-Pf-YtR" secondAttribute="leading" constant="20" id="6qD-GU-Hq7"/>
+                            <constraint firstItem="aNf-Pf-YtR" firstAttribute="trailing" secondItem="l49-7P-5IJ" secondAttribute="trailing" constant="20" id="C8L-Gc-tSG"/>
+                            <constraint firstItem="aNf-Pf-YtR" firstAttribute="trailing" secondItem="Pih-kI-C9A" secondAttribute="trailing" constant="20" id="Dhi-kK-zFn"/>
+                            <constraint firstItem="DSb-NE-Fnk" firstAttribute="centerY" secondItem="Sr8-Je-1on" secondAttribute="centerY" constant="-140" id="Jfk-HD-CfX"/>
+                            <constraint firstItem="Pih-kI-C9A" firstAttribute="top" secondItem="l49-7P-5IJ" secondAttribute="bottom" constant="20" id="LKV-AB-AiJ"/>
+                            <constraint firstItem="DSb-NE-Fnk" firstAttribute="centerX" secondItem="Sr8-Je-1on" secondAttribute="centerX" id="UqM-wk-qJw"/>
+                            <constraint firstItem="l49-7P-5IJ" firstAttribute="top" secondItem="DSb-NE-Fnk" secondAttribute="bottom" constant="20" id="aZs-Ih-JRE"/>
+                            <constraint firstItem="l49-7P-5IJ" firstAttribute="leading" secondItem="aNf-Pf-YtR" secondAttribute="leading" constant="20" id="nIi-uO-Lb3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aNf-Pf-YtR"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Pih-kI-C9A" id="YBJ-Nv-SnX"/>
+                        <outlet property="onBoardingImage" destination="DSb-NE-Fnk" id="t4t-9y-hfG"/>
+                        <outlet property="titleLabel" destination="l49-7P-5IJ" id="A8a-5p-KEO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="508-Bh-n8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1193" y="-142"/>
+        </scene>
+        <!--On Boarding View Controller-->
+        <scene sceneID="qTF-sH-Tzw">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="kdt-KT-4i4" customClass="OnBoardingViewController" customModule="Finanzas" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdv-Qj-8HH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="-142"/>
+        </scene>
+        <!--On Boarding Container View Controller-->
+        <scene sceneID="8hi-Fn-few">
+            <objects>
+                <viewController id="kX0-Ic-gDR" customClass="OnBoardingContainerViewController" customModule="Finanzas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0mj-Va-OOj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7H-4b-mH8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="kdt-KT-4i4" kind="embed" identifier="openOnBoarding" id="GGi-Tf-NsW"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mG0-Ph-Y24">
+                                <rect key="frame" x="20" y="602" width="335" height="45"/>
+                                <color key="backgroundColor" name="GreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="6q1-XU-ldU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Iniciar">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                        <color key="value" name="GreenShadown"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kfn-oX-yqX" kind="presentation" identifier="SignIn" id="JPe-1l-5L1"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dNk-T6-CUi">
+                                <rect key="frame" x="168" y="482" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fjf-jC-pkw" firstAttribute="trailing" secondItem="A7H-4b-mH8" secondAttribute="trailing" id="1lB-eF-AFo"/>
+                            <constraint firstItem="dNk-T6-CUi" firstAttribute="centerX" secondItem="0mj-Va-OOj" secondAttribute="centerX" id="7nv-H3-38Q"/>
+                            <constraint firstItem="Fjf-jC-pkw" firstAttribute="bottom" secondItem="mG0-Ph-Y24" secondAttribute="bottom" constant="20" id="92s-pc-zYk"/>
+                            <constraint firstAttribute="trailing" secondItem="mG0-Ph-Y24" secondAttribute="trailing" constant="20" id="IoC-Qu-HjY"/>
+                            <constraint firstItem="mG0-Ph-Y24" firstAttribute="leading" secondItem="Fjf-jC-pkw" secondAttribute="leading" constant="20" id="chg-gi-ROJ"/>
+                            <constraint firstItem="A7H-4b-mH8" firstAttribute="top" secondItem="Fjf-jC-pkw" secondAttribute="top" id="eiq-tr-sxY"/>
+                            <constraint firstItem="mG0-Ph-Y24" firstAttribute="top" secondItem="dNk-T6-CUi" secondAttribute="bottom" constant="83" id="knA-Im-CPx"/>
+                            <constraint firstItem="Fjf-jC-pkw" firstAttribute="bottom" secondItem="A7H-4b-mH8" secondAttribute="bottom" id="mKV-4h-1fM"/>
+                            <constraint firstItem="A7H-4b-mH8" firstAttribute="leading" secondItem="Fjf-jC-pkw" secondAttribute="leading" id="sgI-Dq-xhz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fjf-jC-pkw"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="dNk-T6-CUi" id="kQm-Vh-B5V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Pz-mb-yVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714" y="-141"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="7CT-UQ-NVG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="kfn-oX-yqX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmL-1a-TvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-709" y="301"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="GrayColor">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenShadown">
+            <color red="0.31764705882352939" green="0.39215686274509803" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
